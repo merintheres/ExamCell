@@ -30,7 +30,7 @@ public class FirebaseConfig {
             if (FirebaseApp.getApps().isEmpty()) {
                 // Initialize Firebase Admin SDK
                 logger.info("Loading Firebase service account file...");
-                InputStream serviceAccount = new ClassPathResource("firebase-service-account.json").getInputStream();
+                InputStream serviceAccount = new ClassPathResource("firebase-account-service.json").getInputStream();
                 
                 logger.info("Building Firebase options with project ID: {}", firebaseProjectId);
                 FirebaseOptions options = FirebaseOptions.builder()
